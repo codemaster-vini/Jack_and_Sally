@@ -6,6 +6,18 @@
     max-width: 100%;
     min-height: calc(100vh);
 
+    @media screen and (max-width: 767px){
+        background-size: contain;
+        text-align: center;
+        min-height: 90vh;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        background-size: contain;
+        min-height: 700px;
+    }
+
+
     &__container{
         padding: 5.6vw;
         max-width: 1330px;
@@ -14,6 +26,10 @@
 
     &__content{
         margin-top: 100px;
+
+        @media screen and (max-width: 767px){
+            margin-top: 300px;
+        }
 
         img{
             width: 300px;
@@ -33,6 +49,10 @@
 
         &__item{
             list-style: none;
+
+            @media screen and (max-width: 767px){
+                margin: auto;
+            }
 
             a{
                 text-decoration: none;

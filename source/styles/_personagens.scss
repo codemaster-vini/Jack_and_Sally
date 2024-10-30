@@ -21,6 +21,12 @@
         font-weight: bold;
         text-transform: uppercase;
 
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            font-size: 24px;
+            margin-top: 0;
+            margin-right: 16px;
+        }
+
         &--is-open{
             border-bottom: 5px solid white;
         }
@@ -36,6 +42,17 @@
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 16px;
+
+            @media screen and (max-width: 767px){
+                display: block;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1023px){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+        
     }
 
     li{
@@ -43,6 +60,18 @@
         width: 300px;
         height: auto;
         color: #fff;
+
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            margin: auto;
+            margin-bottom: 24px;
+        }
+
+        @media screen and (max-width: 767px){
+            width: 200px;
+            margin: auto;
+            margin-bottom: 64px;
+            
+        }
         }
         img{
             max-width: 100%;
