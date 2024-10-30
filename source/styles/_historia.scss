@@ -1,0 +1,29 @@
+.historia{
+    &__container{
+        display: grid;
+        grid-template-columns: 60% 30%;
+        gap: 10%;
+        max-width: 1000px;
+        width: 100%;
+        margin: auto;
+        color: #fff;
+
+        div{
+            margin-right: 20px;
+
+            h2{
+                margin-bottom: 20px;
+                font-size: 32px;
+            }
+
+            p{
+                line-height: 30px;
+            }
+        }
+
+        img{
+            max-width: 100%;
+            height: 400px;
+        }
+    }
+}

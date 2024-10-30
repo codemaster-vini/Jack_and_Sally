@@ -1,0 +1,53 @@
+.header{
+    padding:  8px;
+    padding-top: 8px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.473);
+    
+
+    &__hidden{
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s ease;
+
+    }
+
+    &__container{
+        max-width: 1300px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__branding{
+        width: 120px;
+    }
+
+    &__menu{
+        display: flex;
+
+        
+
+        &__item{
+            list-style: none;
+            margin-right: 8px;
+
+            &__link{
+                text-decoration: none;
+                color: #fff;
+                padding: 16px 24px;
+                font-weight: bold;
+                border-radius: 5px;
+                background-color: rgb(26, 26, 204);
+
+                &:hover{
+                    background-color: lighten(blue, 5%);
+                }
+            }
+        }
+    }
+}
